@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/configuracion"
+        android:title="configuracion"
+        android:icon="@android:drawable/ic_menu_preferences"
+        />
+
+    <item android:id="@+id/infor"
+        android:title="informacion"
+        android:icon="@android:drawable/ic_menu_info_details"
+
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/nuscar"
+        android:title="buscar"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        />
+
+</menu>

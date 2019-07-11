@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="com.example.danny.rocas.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarBH"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.10"
+            android:paddingBottom="45dp"
+            android:text="Rocas"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.05"
+            android:text="@string/inicio" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="0.06"
+            android:text="@string/config" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="0.08"
+            android:onClick="salir_app"
+            android:text="@string/salir" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ejecutar"
+            android:text="@string/adicional" />
+    </LinearLayout>
+
+</RelativeLayout>
